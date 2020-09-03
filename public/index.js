@@ -37,3 +37,37 @@ function showReviews() {
   slides[reviewIndex - 1].style.display = "block";
   setTimeout(showReviews, 7000); // Change image every 7 seconds
 }
+
+window.onscroll = function () {
+  myFunction();
+  phoneFunction();
+};
+
+// Get the navbar
+var navbar = document.getElementById("main-nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+var mobile_nav = document.getElementById("main-nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function phoneFunction() {
+  if (window.pageYOffset >= sticky) {
+    mobile_nav.classList.add("mobile_sticky");
+  } else {
+    mobile_nav.classList.remove("mobile_sticky");
+  }
+}

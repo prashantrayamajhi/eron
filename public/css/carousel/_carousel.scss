@@ -1,6 +1,8 @@
 .slideshow-container {
   position: relative;
   margin: auto;
+  // margin-top: 75px;
+  z-index: -1;
   .mySlides {
     img {
       width: 100%;

@@ -1,0 +1,105 @@
+.navbar {
+  .brand {
+    .nav-info {
+      display: none;
+    }
+    background-color: #f1f3f8;
+    padding: 20px;
+    h1 {
+      span {
+        color: #07689f;
+      }
+    }
+  }
+  .main-nav {
+    padding: 15px;
+    background-color: #393b44;
+    color: #f1f3f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-wrapper {
+      display: none;
+      .nav-list {
+        display: flex;
+        list-style-type: none;
+        .nav-item {
+          margin-right: 10px;
+          .nav-link {
+            background-color: transparent !important;
+            font-size: 16px;
+            &:hover {
+              color: #fb7813;
+              transition: 0.7s;
+            }
+          }
+        }
+      }
+    }
+    .mobile-wrapper {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 13px;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      span {
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #fb7813;
+      padding: 10px 13px;
+      border-radius: 12px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar {
+    .brand {
+      display: flex;
+      justify-content: space-around;
+      .nav-info {
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        .item {
+          display: flex;
+          align-items: center;
+          margin-right: 55px;
+          span {
+            margin-right: 15px;
+            font-size: 38px;
+            color: #07689f;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    .main-nav {
+      .mobile-wrapper {
+        display: none;
+      }
+      a {
+        font-size: 16px;
+      }
+
+      .main-wrapper {
+        display: block;
+      }
+    }
+  }
+}

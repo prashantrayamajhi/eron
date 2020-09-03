@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@import "./nav/nav";
+
+@import "./carousel/carousel";
+@import "./header/header";
+@import "./banner/banner";
+@import "./services/services";
+@import "./contact/contact";
+@import "./reviews/reviews";
